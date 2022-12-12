@@ -10,23 +10,17 @@ j=0
 k=0
 
 iterable=[i,j,k]
+comp=[x,y,z]
 grand=[]
 
-for shit in range (x+y+z):
-   if iterable[0]<x:
-      iterable[0]+=1
-      
-      if iterable[0]>n:
-         iterable[0]=0
-         
-         if iterable[1]<y:
-            iterable[1]+=1
-            
-         if iterable[2]<z:
-            iterable[2]+=1
+for shit in range(9999):
 
-   else: break
+   if iterable[2]<z:
+      iterable[2]+=1 
+   if iterable[2]=z:
+      iterable[2]=0
+   
+   elif iterable==comp: break
    grand.append(iterable)
-   
-print(grand)
-   
+   print(grand)
+ 
