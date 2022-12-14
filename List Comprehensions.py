@@ -1,26 +1,13 @@
 #############Flex $hit$$$$$$$$$$$$$$$$$$$$
-x= int(input("First: "))
-y= int(input("Second: "))
-z= int(input("Third: "))
 
-n= int(input("Sum: "))
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 
-i=0
-j=0
-k=0
-
-iterable=[i,j,k]
-comp=[x,y,z]
-grand=[]
-
-for shit in range(9999):
-
-   if iterable[2]<z:
-      iterable[2]+=1 
-   if iterable[2]=z:
-      iterable[2]=0
-   
-   elif iterable==comp: break
-   grand.append(iterable)
-   print(grand)
- 
+#Input
+x = int(input())
+y = int(input())
+z = int(input())
+N = int(input())
+#Solve
+arr = [[X, Y, Z] for X in range(x+1) for Y in range(y+1) for Z in range(z+1) if X + Y + Z != N]
+#Output
+print(arr)
