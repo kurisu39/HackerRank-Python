@@ -3,6 +3,7 @@ if __name__ == '__main__':
         #name = input()
         #score = float(input())  
     lst = []
+    lst2= []
     n = int(input("Enter number of elements : "))
     min=0
     for i in range(0, n):
@@ -11,11 +12,13 @@ if __name__ == '__main__':
     #second part
         if ele[1]>min:
             min=ele[1]   
-        
+
+        lst.append(ele)
+
+  
     #third part
-        if ele [1]==min:
-            print (ele[0])
-        
+
+    print (lst[0][0])
     #print (lst)
     #print (min)
     #print (sorted(result))
