@@ -1,25 +1,36 @@
 if __name__ == '__main__':
-    #for _ in range(int(input())):
-        #name = input()
-        #score = float(input())  
     lst = []
     lst2= []
-    n = int(input("Enter number of elements : "))
-    min=0
+    lst3= []
+    n = int(input())
+    max=0
+
     for i in range(0, n):
         ele = [input(), float(input())]
-        
-    #second part
-        if ele[1]>min:
-            min=ele[1]   
-
+        if ele[1]>max:
+            max=ele[1]     
         lst.append(ele)
+    min=max
 
+    for min_lst in lst:
+        if min>min_lst[1]:
+            min=min_lst[1]   
+
+    for second_lst in lst:
+        if second_lst[1]==min:
+            second_lst.remove(second_lst[1])
+            second_lst.remove(second_lst[0])
+        lst2.append(second_lst)
+    
+    for moremin_lst in lst2:
+        try:
+            if max>moremin_lst[1]:
+                max=moremin_lst[1]  
+        except: pass
   
-    #third part
-
-    print (lst[0][0])
-    #print (lst)
-    #print (min)
-    #print (sorted(result))
-    #print (lst[1])
+    for alfin_lst in lst2:
+        try:
+            if max==alfin_lst[1]:
+                print (alfin_lst[0])
+        except: pass
+    
