@@ -27,10 +27,16 @@ if __name__ == '__main__':
             if max>moremin_lst[1]:
                 max=moremin_lst[1]  
         except: pass
-  
+
+    lol=""
+    lst4=[]
     for alfin_lst in lst2:
         try:
             if max==alfin_lst[1]:
-                print (alfin_lst[0])
+                lol=alfin_lst[0]
+                lst4.append(lol)
         except: pass
+
     
+    for alfin in sorted (lst4):
+        print (alfin)
