@@ -6,8 +6,16 @@ if __name__ == '__main__':
         name, *line = input().split()
         scores = list(map(float, line))
         student_marks[name] = scores
-        lst.append(student_marks)
+        
     query_name = input()
     
-    print (lst)
+    valor=student_marks[query_name]
+    sumbruh=0
+    for bruh in valor:
+        sumbruh += bruh
+        
+    pro=sumbruh/len(valor)
+    print (format (pro, '.2f'))
+    
+    
     
