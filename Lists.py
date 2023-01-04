@@ -18,7 +18,7 @@ if __name__ == '__main__':
             arr.append(int(enter[1]))
             
         if enter[0]=="sort":
-            arr.sort
+            arr.sort(reverse=False)
 
         if enter[0]=="pop":
             arr.pop()
