@@ -8,8 +8,10 @@
 #
 
 def print_full_name(first, last):
+    Nah='Hello '+first+' '+last+'! You just delved into python.'
     # Write your code here
-
+    return Nah
 if __name__ == '__main__':
     first=input()
     last=input()
+    print (print_full_name(first,last))
